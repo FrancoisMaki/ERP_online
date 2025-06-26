@@ -4,29 +4,48 @@ html, body {
     height: 100%;
 }
 
-.banner-container {
+.main-containers {
     display: flex;
     width: 100%;
     height: 100vh;
     border: 2px solid black;
 }
 
-.banner-container-options{
+.sidebar-container{
     flex: 1;
     flex-direction: column;
-    width: 200px;
     border: 2px solid blue;
 }
 
-.banner-container-logo{
-    flex: 1;
+.content-container{
+    display: flex;
+    flex: 4;
     flex-direction: column;
     border: 2px solid red;
 }
 
-.sidebar-container{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+.guidebar-container{
+    flex: 0.3;
     border: 2px solid green;
+}
+
+.window-container{
+    display: flex;
+    flex: 1.5;
+    border: 2px solid purple;
+}
+
+.sale-container{
+    flex: 1;
+    border: 2px solid yellow;
+}
+
+.purchase-container{
+    flex: 1;
+    border: 2px solid pink;
+}
+
+.statistic-container{
+    flex: 2;
+    border: 2px solid orange;
 }
