@@ -87,3 +87,34 @@ html, body {
     flex: 2;
     border: 2px solid orange;
 }
+
+/*Desplegable menú lateral*/
+
+/*Ventas*/
+
+.dropdown-sales{
+    display: none;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.dropdown-sales li a {
+    color: #ddd;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-sales li a:hover {
+    color: #fff;
+}
+
+.sales-submenu > a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
