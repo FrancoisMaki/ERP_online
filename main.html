@@ -87,9 +87,10 @@
 
             <div class="content-container">
 
-                <div class="guidebar-container">
-                    <a class="btn_login" href="index.html">Iniciar Sesión</a>
-                </div>
+            <div class="guidebar-container">
+                <span class="username" id="nombreUsuario"></span>
+                <a class="btn_logout" href="index.html">Cerrar sesión</a>
+            </div>
 
                 <div class="window-container">
                     
@@ -112,8 +113,27 @@
         </div>
 
     </section>
-
+    
 <script>
+  // Obtener el usuario desde localStorage
+  const nombre = localStorage.getItem("usuario");
+
+  // Mostrarlo en la página
+  if (nombre) {
+    document.getElementById("nombreUsuario").textContent = nombre;
+  } else {
+    // Si no hay usuario, redirige a login
+    window.location.href = "index.html";
+  }
+
+  // Si quieres que el botón de cerrar sesión borre el usuario
+  document.querySelector('.btn_logout').addEventListener('click', function() {
+    localStorage.removeItem("usuario");
+  });
+</script>
+
+
+<script> /*Desplegable*/
   document.querySelectorAll('.toggle-submenu').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault(); // Evita que recargue la página
