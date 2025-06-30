@@ -1,4 +1,4 @@
-CREATE TABLE pais (
+--CREATE TABLE pais (
   paisid CHAR(2) NOT NULL PRIMARY KEY,        -- ISO alpha-2
   iso3 CHAR(3) NOT NULL UNIQUE,               -- ISO alpha-3
   nombre VARCHAR(100) NOT NULL,               -- Nombre local o traducido

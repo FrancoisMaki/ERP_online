@@ -90,26 +90,24 @@ html, body {
 
 /*Desplegable menú lateral*/
 
-/*Ventas*/
-
-.dropdown-sales{
+.dropdown{
     display: none;
     padding-left: 20px;
     list-style: none;
 }
 
-.dropdown-sales li a {
+.dropdown li a {
     color: #ddd;
     padding: 5px 0;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-sales li a:hover {
+.dropdown li a:hover {
     color: #fff;
 }
 
-.sales-submenu > a{
+.submenu > a{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -117,4 +115,24 @@ html, body {
     text-decoration: none;
     color: white;
     padding: 10px;
+}
+
+/*botón de inicio de sesión*/
+.btn_login {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #f0f0f0; /* opcional: para que se vea el área */
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.btn_login:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
