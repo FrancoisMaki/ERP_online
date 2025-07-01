@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../styles/managment.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/managment.css') }}">
   <title>Gestión de Países</title>
-  <script defer src="../js/country.js"></script>
 </head>
 <body>
+    <script defer src="{{ url_for('static', filename='js/country.js') }}"></script>
+  <h1>PRUEBA</h1>
 <header>
     <div class="title">
         <h1>Gestión de Países</h1>
