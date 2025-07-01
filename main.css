@@ -117,22 +117,25 @@ html, body {
     padding: 10px;
 }
 
-/*botón de inicio de sesión*/
-.btn_login {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    background-color: #f0f0f0; /* opcional: para que se vea el área */
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
+/*Botón cerrar sesión*/
+
+.guidebar-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    gap: 15px;
 }
 
-.btn_login:hover{
-    background-color: black;
+.btn_logout{
+    background-color: #ddd;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    color:black
+}
+
+.btn_logout:hover{
+    background-color: gray;
     color: white;
-    cursor: pointer;
 }
