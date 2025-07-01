@@ -26,8 +26,8 @@
                             Ventas</a>
 
                         <ul class = "dropdown">
-                            <li><a href= "/public/new_sale.html"> Nueva Venta</a></li>
-                            <li><a href= "/public/historial_sale.html"> Historial ventas</a></li>
+                            <li><a href= "/public/html/new_sale.html"> Nueva Venta</a></li>
+                            <li><a href= "/public/html/historial_sale.html"> Historial ventas</a></li>
                         </ul>
                     </li>
 
@@ -38,8 +38,8 @@
                             Compras</a>
 
                         <ul class = "dropdown">
-                            <li><a href= "/public/payment-register.html">Registro de compras</a></li>
-                            <li><a href= "/public/supplier.html">Proveedores</a></li>
+                            <li><a href= "/public/html/payment-register.html">Registro de compras</a></li>
+                            <li><a href= "/public/html/supplier.html">Proveedores</a></li>
                         </ul>
                     </li>
 
@@ -49,15 +49,15 @@
                             Mantenimiento</a>
 
                         <ul class = "dropdown">
-                            <li><a href= "/public/countries.html">Países</a></li>
-                            <li><a href= "/public/province.html">Provincias</a></li>
-                            <li><a href= "/public/cities.html">Poblaciones</a></li>
-                            <li><a href= "/public/companies.html">Empresas</a></li>
-                            <li><a href= "/public/clients.html">Clientes</a></li>
-                            <li><a href= "/public/supplier.html">Poveedores</a></li>
-                            <li><a href= "/public/categories.html">Categorías</a></li>
-                            <li><a href= "/public/authors.html">Autores</a></li>
-                            <li><a href= "/public/warehouses.html">Almacenes</a></li>
+                            <li><a href= "/public/html/countries.html">Países</a></li>
+                            <li><a href= "/public/html/province.html">Provincias</a></li>
+                            <li><a href= "/public/html/cities.html">Poblaciones</a></li>
+                            <li><a href= "/public/html/companies.html">Empresas</a></li>
+                            <li><a href= "/public/html/clients.html">Clientes</a></li>
+                            <li><a href= "/public/html/supplier.html">Poveedores</a></li>
+                            <li><a href= "/public/html/categories.html">Categorías</a></li>
+                            <li><a href= "/public/html/authors.html">Autores</a></li>
+                            <li><a href= "/public/html/warehouses.html">Almacenes</a></li>
                         </ul>
                     </li>
 
@@ -67,8 +67,8 @@
                             Almacen</a>
 
                         <ul class = "dropdown">
-                            <li><a href= "/public/products.html">Productos</a></li>
-                            <li><a href= "/public/stock.html">Stock</a></li>
+                            <li><a href= "/public/html/products.html">Productos</a></li>
+                            <li><a href= "/public/html/stock.html">Stock</a></li>
                         </ul>
                     </li>
 
@@ -78,8 +78,8 @@
                             Estadísticas</a>
 
                         <ul class = "dropdown">
-                            <li><a href= "/public/graphics.html">Graficos</a></li>
-                            <li><a href= "/public/summary.html">Resumen</a></li>
+                            <li><a href= "/public/html/graphics.html">Graficos</a></li>
+                            <li><a href= "/public/html/summary.html">Resumen</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -114,34 +114,7 @@
 
     </section>
     
-<script>
-  // Obtener el usuario desde localStorage
-  const nombre = localStorage.getItem("usuario");
-
-  // Mostrarlo en la página
-  if (nombre) {
-    document.getElementById("nombreUsuario").textContent = nombre;
-  } else {
-    // Si no hay usuario, redirige a login
-    window.location.href = "index.html";
-  }
-
-  // Si quieres que el botón de cerrar sesión borre el usuario
-  document.querySelector('.btn_logout').addEventListener('click', function() {
-    localStorage.removeItem("usuario");
-  });
-</script>
-
-
-<script> /*Desplegable*/
-  document.querySelectorAll('.toggle-submenu').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault(); // Evita que recargue la página
-      const submenu = this.nextElementSibling;
-      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-    });
-  });
-</script>
+    <script src="script.js"></script>
 
 </body>
 </html>
