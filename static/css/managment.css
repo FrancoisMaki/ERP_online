@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-containers {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.sidebar-container{
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid blue;
+}
+
+.sidebar-container img{
+    margin: 2rem auto;
+    display: block;
+}
+
+.sidebar-container .logo{
+    height: 10rem;
+}
+
+.sidebar-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-container ul li {
+    padding: 1rem;
+    text-align: center;
+}
+
+.sidebar-container ul li:hover {
+    background-color: #e0e0e0;
+}
+
+.sidebar-container ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar-container ul li a span {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.content-container{
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    border: 2px solid red;
+    
+}
+
+.guidebar-container{
+    flex: 0.3;
+    border: 2px solid green;
+}
+
+.window-container{
+    display: flex;
+    flex: 1.5;
+    border: 2px solid purple;
+}
+
+.sale-container{
+    flex: 1;
+    border: 2px solid yellow;
+}
+
+.purchase-container{
+    flex: 1;
+    border: 2px solid pink;
+}
+
+.statistic-container{
+    flex: 2;
+    border: 2px solid orange;
+}
+
+/*Desplegable menú lateral*/
+
+.dropdown{
+    display: none;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.dropdown li a {
+    color: #ddd;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    color: #fff;
+}
+
+.submenu > a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/*Botón cerrar sesión*/
+
+.guidebar-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    gap: 15px;
+}
+
+.btn_logout{
+    background-color: #ddd;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    color:black
+}
+
+.btn_logout:hover{
+    background-color: gray;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#section-add{
+    color: red;
+}
+
+
