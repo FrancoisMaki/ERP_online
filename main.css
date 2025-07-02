@@ -101,10 +101,12 @@ html, body {
     padding: 5px 0;
     text-decoration: none;
     display: block;
+    width: 100%;
 }
 
 .dropdown li a:hover {
-    color: #fff;
+    color: white;
+   
 }
 
 .submenu > a{
