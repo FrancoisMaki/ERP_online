@@ -98,63 +98,63 @@
 
         <div class="window-container">
 
-            <script defer src="{{ url_for('static', filename='js/provincia.js') }}"></script>
+            <script defer src="{{ url_for('static', filename='js/province.js') }}"></script>
 
-<header>
-  <div class="title">
-    <h1>Gestión de Provincias</h1>
-  </div>
-  <div class="CRUD-options">
-    <button id="add-prov" class="btn">Añadir Provincia</button>
-    <button id="view-prov" class="btn">Ver Provincias</button>
-    <button id="edit-prov" class="btn">Editar Provincia</button>
-    <button id="delete-prov" class="btn">Eliminar Provincia</button>
-  </div>
-</header>
+            <header>
+            <div class="title">
+                <h1>Gestión de Provincias</h1>
+            </div>
+            <div class="CRUD-options">
+                <button id="add-prov" class="btn">Añadir Provincia</button>
+                <button id="view-prov" class="btn">Ver Provincias</button>
+                <button id="edit-prov" class="btn">Editar Provincia</button>
+                <button id="delete-prov" class="btn">Eliminar Provincia</button>
+            </div>
+            </header>
 
-<section id="section-prov-add" class="hidden">
-  <h2>Añadir Provincia</h2>
-  <form id="form-prov-add">
-    <label>ID Provincia (01-99): <input type="number" id="provinciaid" required></label><br>
-    <label>Nombre: <input type="text" id="nombre" required></label><br>
-    <label>País (ID): <input type="text" id="paisid" required></label><br>
-    <label>Código ISO: <input type="text" id="codigo_iso"></label><br>
-    <button type="submit">Guardar</button>
-  </form>
-  <p id="mensaje-prov-add"></p>
-</section>
+            <section id="section-prov-add" class="hidden">
+            <h2>Añadir Provincia</h2>
+            <form id="form-prov-add">
+                <label>ID Provincia (01-99): <input type="number" id="provinciaid" required></label><br>
+                <label>Nombre: <input type="text" id="nombre" required></label><br>
+                <label>País (ID): <input type="text" id="paisid" required></label><br>
+                <label>Código ISO: <input type="text" id="codigo_iso"></label><br>
+                <button type="submit">Guardar</button>
+            </form>
+            <p id="mensaje-prov-add"></p>
+            </section>
 
-<section id="section-prov-view" class="hidden">
-  <h2>Listado de Provincias</h2>
-  <table border="1" id="tabla-provincias">
-    <thead>
-      <tr><th>ID</th><th>Nombre</th><th>País</th><th>Código ISO</th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</section>
+            <section id="section-prov-view" class="hidden">
+            <h2>Listado de Provincias</h2>
+            <table border="1" id="tabla-provincias">
+                <thead>
+                <tr><th>ID</th><th>Nombre</th><th>País</th><th>Código ISO</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            </section>
 
-<section id="section-prov-edit" class="hidden">
-  <h2>Editar Provincia</h2>
-  <form id="form-prov-edit">
-    <label>ID Provincia: <input type="number" id="edit-provinciaid" required></label><br>
-    <label>País ID: <input type="text" id="edit-paisid" required></label><br>
-    <label>Nuevo Nombre: <input type="text" id="edit-nombre"></label><br>
-    <label>Nuevo Código ISO: <input type="text" id="edit-codigo_iso"></label><br>
-    <button type="submit">Actualizar</button>
-  </form>
-  <p id="mensaje-prov-edit"></p>
-</section>
+            <section id="section-prov-edit" class="hidden">
+            <h2>Editar Provincia</h2>
+            <form id="form-prov-edit">
+                <label>ID Provincia: <input type="number" id="edit-provinciaid" required></label><br>
+                <label>País ID: <input type="text" id="edit-paisid" required></label><br>
+                <label>Nuevo Nombre: <input type="text" id="edit-nombre"></label><br>
+                <label>Nuevo Código ISO: <input type="text" id="edit-codigo_iso"></label><br>
+                <button type="submit">Actualizar</button>
+            </form>
+            <p id="mensaje-prov-edit"></p>
+            </section>
 
-<section id="section-prov-delete" class="hidden">
-  <h2>Eliminar Provincia</h2>
-  <form id="form-prov-delete">
-    <label>ID Provincia: <input type="number" id="delete-provinciaid" required></label><br>
-    <label>ID País: <input type="text" id="delete-paisid" required></label><br>
-    <button type="submit">Eliminar</button>
-  </form>
-  <p id="mensaje-prov-delete"></p>
-</section>                      
+            <section id="section-prov-delete" class="hidden">
+            <h2>Eliminar Provincia</h2>
+            <form id="form-prov-delete">
+                <label>ID Provincia: <input type="number" id="delete-provinciaid" required></label><br>
+                <label>ID País: <input type="text" id="delete-paisid" required></label><br>
+                <button type="submit">Eliminar</button>
+            </form>
+            <p id="mensaje-prov-delete"></p>
+            </section>                      
         </div>
 
       </div>
