@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from components.model.provincia_model import (
+from components.model.province_model import (
     obtener_provincias,
     insertar_provincia,
     actualizar_provincia,
@@ -18,17 +18,26 @@ def listar_provincias():
 
 @provincia_bp.route('/api/provincias', methods=['POST'])
 def agregar_provincia():
-    data = request.get_json()
-    resultado = insertar_provincia(data)
-    return jsonify(resultado), 201 if "message" in resultado else 400
+    try:
+        data = request.get_json()
+        resultado = insertar_provincia(data)
+        return jsonify(resultado), 201 if "message" in resultado else 400
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @provincia_bp.route('/api/provincias/<int:provinciaid>/<paisid>', methods=['PUT'])
 def modificar_provincia(provinciaid, paisid):
-    data = request.get_json()
-    resultado = actualizar_provincia(provinciaid, paisid, data)
-    return jsonify(resultado), 200 if "message" in resultado else 400
+    try:
+        data = request.get_json()
+        resultado = actualizar_provincia(provinciaid, paisid, data)
+        return jsonify(resultado), 200 if "message" in resultado else 400
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @provincia_bp.route('/api/provincias/<int:provinciaid>/<paisid>', methods=['DELETE'])
 def borrar_provincia(provinciaid, paisid):
-    resultado = eliminar_provincia(provinciaid, paisid)
-    return jsonify(resultado), 200 if "message" in resultado else 400
+    try:
+        resultado = eliminar_provincia(provinciaid, paisid)
+        return jsonify(resultado), 200 if "message" in resultado else 400
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500

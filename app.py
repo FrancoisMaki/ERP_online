@@ -1,9 +1,12 @@
 from flask import Flask, render_template
-from components.controller.country_controller import pais_bp  # Si ya usas Blueprints
+from components.controller.country_controller import pais_bp
+from components.controller.province_controller import provincia_bp
 from livereload import Server
 
 app = Flask(__name__, static_folder='static')
+
 app.register_blueprint(pais_bp)
+app.register_blueprint(provincia_bp)
 
 # Página principal (login)
 @app.route('/')

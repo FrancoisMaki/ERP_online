@@ -15,6 +15,7 @@ def listar_paises():
         paises = obtener_paises()
         return jsonify(paises), 200
     except Exception as e:
+        print("Error al obtener países:", e)
         return jsonify({"error": str(e)}), 500
 
 # Crear nuevo país

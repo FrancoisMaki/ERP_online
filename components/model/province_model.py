@@ -1,4 +1,5 @@
-from db import conectar  # o como lo tengas configurado
+import os 
+from components.controller.connection import conectar
 
 # Obtener todas las provincias
 def obtener_provincias():
